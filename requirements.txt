@@ -1,0 +1,31 @@
+# FIPSAR Prospect Journey Intelligence — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Snowflake
+snowflake-connector-python
+
+# LangChain + LangGraph
+langchain
+langchain-core
+langchain-openai
+langgraph
+
+# OpenAI SDK (pulled by langchain-openai, pin for stability)
+openai
+
+# Data handling
+pandas
+tabulate      # Required by DataFrame.to_markdown()
+
+# YAML parsing (built into Python stdlib but explicit for clarity)
+pyyaml
+
+# Streamlit UI (1.37+ required for st.audio_input voice recording widget)
+streamlit
+
+# Charts
+plotly
+kaleido       # Required for Plotly chart → PNG export (email attachments)
+
+# Optional: notebook/REPL convenience
+ipython
